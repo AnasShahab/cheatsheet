@@ -1,4 +1,6 @@
-### Managing docker containers via cli
+# Docker
+
+## Managing docker containers via cli
 
 | COMMAND                                                        | DESCRIPTION                                                                                                                                                                                                                               |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +25,10 @@
 | `docker volume rm <volume>`                                    | Destroy a volume                                                                                                                                                                                                                          |
 | `docker build -t <cotainer_name:Version> <path_of_Dockerfile>` | Build custom docker image                                                                                                                                                                                                                 |
 
-### Managing docker containers via compose file
-| COMMAND                | DESCRIPTION                                                                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+## Managing docker containers via compose file
+
+| COMMAND | DESCRIPTION  |
+| --- | ---|
 | docker compose up -d   | Create container(s) in detached mode (without the -d parameter you can do any other task; exiting then stops the containers) |
 | docker compose down    | Destroys the container(s)                                                                                                    |
 | docker compose stop    | Stops the container(s)                                                                                                       |
