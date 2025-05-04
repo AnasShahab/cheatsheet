@@ -2,4 +2,4 @@
 
 ## Some important commands for different tools
 ***
-> Created via Obsidian ![[icons/obsidian-icon.svg|20]]
+> Created via Obsidian <img src="icons/obsidian-icon.svg" width="20" />
