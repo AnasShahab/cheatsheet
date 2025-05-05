@@ -27,10 +27,11 @@
 
 ## Managing docker containers via compose file
 
-| COMMAND | DESCRIPTION  |
-| --- | ---|
-| docker compose up -d   | Create container(s) in detached mode (without the -d parameter you can do any other task; exiting then stops the containers) |
-| docker compose down    | Destroys the container(s)                                                                                                    |
-| docker compose stop    | Stops the container(s)                                                                                                       |
-| docker compose ps      | List running containers created by compose file                                                                              |
-| `docker compose ps -a` | List all containers, including stopped that were created by compose file                                                     |
+| COMMAND                 | DESCRIPTION                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| docker compose up -d    | Create container(s) in detached mode (without the -d parameter you can do any other task; exiting then stops the containers) |
+| docker compose down     | Destroys the container(s)                                                                                                    |
+| docker compose stop     | Stops the container(s)                                                                                                       |
+| docker compose ps       | List running containers created by compose file                                                                              |
+| `docker compose ps -a`  | List all containers, including stopped that were created by compose file                                                     |
+| `docker compose config` | Check and validate the compose-yaml file                                                                                     |
