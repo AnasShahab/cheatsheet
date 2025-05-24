@@ -4,14 +4,18 @@
 | COMMAND                                                                                    | DESCRIPTION                                                                                    |
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
 | `kubectl version`                                                                          | Version of kubectl installed                                                                   |
+| `kubectl ru`                                                                               |                                                                                                |
 | `kubectl get nodes`                                                                        | Status of nodes                                                                                |
+| `kubectl run <pod_name> --image=<image_name>`                                              | Start a pod                                                                                    |
+| `kubectl run <pod_name> --image=<image_name> --dry-run=client -o yaml > <pod_file_name>`   | Create a template pod yaml file                                                                |
 | `kubectl get pod`                                                                          | Status of pods                                                                                 |
 | `kubectl get pod --watch`                                                                  | Watch status of pods                                                                           |
 | `kubectl get pod -o wide`                                                                  | Additional information about status of a pod                                                   |
 | `kubectl describe pod <pod_name>`                                                          | Further additional information about status of a pod                                           |
 | `kubectl describe <component> <component_name>`                                            | Further additional information about any component in a cluster                                |
+| `kubectl create service clusterip <service_name> --tcp=<service_port>:<target_port>`       | Create a new ClusterIP service                                                                 |
 | `kubectl get service`                                                                      | Status of services                                                                             |
-| `kubectl delete service <service_name>` / `kubectl delete -f <service_file_name`           | Delete a service                                                                               |
+| `kubectl delete service <service_name>` / `kubectl delete -f <service_file_name>`          | Delete a service                                                                               |
 | `kubectl create deployment <deployment_name> --image=<image_name>`                         | Create an app deployment                                                                       |
 | `kubectl get deployment`                                                                   | Status of deployment                                                                           |
 | `kubectl get deployment nginx-deployment -o yaml`                                          | Configuration of deployment that resides in etcd                                               |
@@ -35,6 +39,7 @@
 | `kubectl apply -f <file_name>`                                                             | Applies the configuration provided in a file                                                   |
 | `kubectl apply -f <file_name> --namespace=<namespace_name`                                 | Applies the configuration provided in a file in a specific namespace                           |
 | `kubectl cluser-info`                                                                      | Get info about cluster                                                                         |
+| `kubectl run `                                                                             |                                                                                                |
 ## kubens
 
 | COMMAND                  | DESCRIPTION                    |
